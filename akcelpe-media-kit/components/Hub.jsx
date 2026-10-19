@@ -27,6 +27,20 @@ function SocItem({ icon, name, sub, url }) {
 export default function Hub() {
   const { tab, setTab } = useKit();
 
+  function openAndDownload(event, download) {
+    if (!download.download) return;
+
+    event.preventDefault();
+    window.open(download.url, '_blank', 'noopener,noreferrer');
+
+    const link = document.createElement('a');
+    link.href = download.url;
+    link.download = download.download;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+
   return (
     <aside
       id="hub"
@@ -68,7 +82,17 @@ export default function Hub() {
             const row = 'download-row flex items-center justify-between gap-2.5 border-b border-line py-[11px] text-sm no-underline';
             const meta = <span className="text-xs text-muted">{d.meta}</span>;
             return (
-              <a key={d.name} className={row} href={d.url} download={d.download}>{d.name}{meta}</a>
+              <a
+                key={d.name}
+                className={row}
+                href={d.url}
+                download={d.download}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(event) => openAndDownload(event, d)}
+              >
+                {d.name}{meta}
+              </a>
             );
           })}
 

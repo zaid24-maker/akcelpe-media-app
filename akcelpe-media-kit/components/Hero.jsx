@@ -21,7 +21,7 @@ export default function Hero() {
           social channels.
         </p>
         <div className="flex flex-wrap gap-3">
-          <a className="btn" href="#resources">Browse resources</a>
+          <a className="btn" href="#resources" target="_blank" rel="noopener noreferrer">Browse resources</a>
           <button className="btn btn-ghost" type="button" onClick={openDemo}>Watch sample video</button>
         </div>
       </div>

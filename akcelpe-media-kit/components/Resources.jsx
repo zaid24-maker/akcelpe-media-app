@@ -49,6 +49,8 @@ function Card({ r, openDemo }) {
             <a
               href={r.url}
               download={r.download}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={`Download ${r.download}`}
               className="absolute inset-0 grid cursor-pointer place-items-center"
             >
@@ -76,7 +78,7 @@ function Card({ r, openDemo }) {
         <p className="text-[13.5px] text-muted">{r.d}</p>
         <div className="mt-auto flex items-center justify-between gap-2 pt-1.5">
           {isDownload ? (
-            <a className={actionCls} href={r.url} download={r.download}>
+            <a className={actionCls} href={r.url} download={r.download} target="_blank" rel="noopener noreferrer">
               {r.k === 'video' ? 'Play sample' : 'Download PDF'} &rarr;
             </a>
           ) : isDemo ? (
@@ -88,7 +90,7 @@ function Card({ r, openDemo }) {
           ) : wait ? (
             <span className="text-[13px] font-medium text-muted">Coming soon</span>
           ) : (
-            <a className={actionCls} href={r.url}>Explore resource &rarr;</a>
+            <a className={actionCls} href={r.url} target="_blank" rel="noopener noreferrer">Explore resource &rarr;</a>
           )}
           <span className={`st${wait || r.st === 'Sample' ? ' st-wait' : ''}`}>{r.st}</span>
         </div>

@@ -1,11 +1,11 @@
 /* ---- Yahan sab content edit karo. Empty url = "pending" dikhega. ---- */
 
 export const SOCIALS = [
-  { id: 'instagram', name: 'Instagram', sub: 'Follow our journey', url: 'https://www.instagram.com/p/Deq3jwfHzVv/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==' },
-  { id: 'bluesky', name: 'Bluesky', sub: 'Follow us on Bluesky', url: 'https://bsky.app/profile/akcelpe.bsky.social/post/3my7qihratc2z' },
-  { id: 'tumblr', name: 'Tumblr', sub: 'Read our latest post', url: 'https://www.tumblr.com/akcelpe/830891423316557824/a-payment-is-more-than-a-click-ever-wondered?source=share' },
-  { id: 'x', name: 'X (Twitter)', sub: 'Latest updates', url: 'https://x.com/AKCELPE/status/2112104761147429092?s=20' },
-  { id: 'youtube', name: 'YouTube', sub: 'Subscribe to our channel', url: 'https://youtube.com/post/Ugkxaj8jyTsxOzAqMQkfb7XgPBl9qhuBNwLN?si=YLTvDoDjR4QjROiu' },
+  { id: 'instagram', name: 'Instagram', sub: 'Follow our journey', url: 'https://www.instagram.com/akcelpe_?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==' },
+  { id: 'bluesky', name: 'Bluesky', sub: 'Follow us on Bluesky', url: 'https://bsky.app/profile/akcelpe.bsky.social' },
+  { id: 'tumblr', name: 'Tumblr', sub: 'Read our latest post', url: 'https://www.tumblr.com/akcelpe?source=share' },
+  { id: 'x', name: 'X (Twitter)', sub: 'Latest updates', url: 'https://x.com/AKCELPE?s=20' },
+  { id: 'youtube', name: 'YouTube', sub: 'Subscribe to our channel', url: 'https://www.youtube.com/@AKCELPE-Official' },
 ];
 
 export const SOCIAL_ICON = {

@@ -98,7 +98,14 @@ export function Verify() {
             {CONTRACT}
           </code>
           <CopyButton text={CONTRACT} targetId="addr" />
-          <a className="btn btn-ghost" href={`https://bscscan.com/token/${CONTRACT}`}>View on BscScan</a>
+          <a
+            className="btn btn-ghost"
+            href={`https://bscscan.com/token/${CONTRACT}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on BscScan
+          </a>
         </div>
         <div>Official contact: <b>{CONTACT_EMAIL}</b></div>
         <p className="max-w-[90ch] text-[12.5px] text-muted">
